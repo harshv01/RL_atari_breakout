@@ -1,7 +1,7 @@
 
 # 🕹️ Deep Reinforcement Learning – Atari Breakout
 
-![Breakout Gameplay](./assets/atari_main.gif)
+<img src="./assets/atari_main.gif" alt="Breakout Gameplay" width="400"/>
 
 This project implements and compares various Deep Reinforcement Learning (DRL) algorithms to train an agent to play the classic Atari game **Breakout**, based on the paper [*Human-level control through deep reinforcement learning*](https://www.nature.com/articles/nature14236).
 
