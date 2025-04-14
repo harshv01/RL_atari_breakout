@@ -5,7 +5,7 @@
 
 This project implements and compares various Deep Reinforcement Learning (DRL) algorithms to train an agent to play the classic Atari game **Breakout**, based on the paper [*Human-level control through deep reinforcement learning*](https://www.nature.com/articles/nature14236).
 
-The project is a part of WPI's *Deep Learning for Advanced Analytics (DS 551)* course and explores how different DQN-based models perform in a high-dimensional, pixel-based environment.
+The project is a part of WPI's *Reinforcement Learning (CS 525)* course and explores how different DQN-based models perform in a high-dimensional, pixel-based environment.
 
 ## 📌 What Was Done
 
@@ -53,43 +53,31 @@ pip install gym[atari,accept-rom-license]
 ```
 
 ### 5. Train the Agent
-Choose your algorithm and run:
 
 ```bash
-# For standard DQN
-python dqn.py
-
-# For Double DQN
-python double_dqn.py
-
-# For Dueling DQN
-python dueling_dqn.py
+python main.py --train_dqn
 ```
 
 ### 6. Watch the Trained Agent
-Use the playback script (if implemented), or modify your training script to render the environment during evaluation.
+Test by:
+```bash
+python main.py --test_dqn
+```
 
----
+Testing DQN while recording a video (recording video takes time, so usually you use this option when the number of testing episodes is small):
+
+```bash
+python main.py --test_dqn --record_video
+```
 
 ## 📈 Results
 
 - Dueling DQN showed more stable and higher performance compared to standard DQN
 - Plots for rewards per episode and loss curves are available in the `results/` directory
 
-## 📂 Directory Structure
 
-```
-RL_atari_breakout/
-├── dqn.py
-├── double_dqn.py
-├── dueling_dqn.py
-├── models/
-├── utils/
-├── results/
-└── README.md
-```
 
 ## 🧠 References
 
 - [DeepMind Nature paper (2015)](https://www.nature.com/articles/nature14236)
-- [WPI DS551 Project Description](https://github.com/UrbanIntelligence/WPI-DS551-Fall24/tree/main/Project3)
+- [WPI CS525 Project Description](https://github.com/UrbanIntelligence/WPI-DS551-Fall24/tree/main/Project3)
